@@ -1,0 +1,21 @@
+name: Lint & Prettier
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: "*"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run lint
+        run: npm run lint
+
+      - name: Run Prettier
+        run: npm run prettier

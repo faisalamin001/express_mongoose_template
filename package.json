@@ -1,0 +1,64 @@
+{
+  "name": "express_mongoose_template",
+  "version": "1.0.0",
+  "description": "A robust and scalable template for applications using Node.js, Express, and Mongoose",
+  "scripts": {
+    "start": "node server.js | node_modules/.bin/bunyan",
+    "server": "nodemon server.js | node_modules/.bin/bunyan",
+    "lint": "npx eslint .",
+    "prettier": "npx prettier -c .",
+    "prettify": "npx prettier -w .",
+    "db:seed": "node database/seed/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/faisalamin001/express_mongoose_template.git"
+  },
+  "keywords": [
+    "express",
+    "mongoose",
+    "nodejs",
+    "template",
+    "api",
+    "backend"
+  ],
+  "author": {
+    "name": "Faisal Amin",
+    "email": "faysalamin001@gmail.com",
+    "url": "https://github.com/faisalamin001"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/faisalamin001/express_mongoose_template#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "convict": "^6.2.4",
+    "convict-format-with-validator": "^6.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-bunyan-logger": "^1.3.3",
+    "express-session": "^1.17.3",
+    "joi": "^17.8.4",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.3.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "husky": "^8.0.3",
+    "nodemon": "^2.0.3",
+    "nyc": "^15.1.0",
+    "prettier": "2.8.2",
+    "pretty-quick": "^3.1.3"
+  },
+  "engines": {
+    "node": "18.0.0",
+    "npm": "9.6.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

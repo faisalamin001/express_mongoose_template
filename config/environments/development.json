@@ -1,0 +1,12 @@
+{
+  "port": 4000,
+  "endpoint": "http://localhost:4000/api",
+  "db": {
+    "uri": "mongodb://localhost:27017/",
+    "name": "test_blog"
+  },
+  "signIn": {
+    "jwtSecret": "faysal001",
+    "jwtExpiresIn": "30d"
+  }
+}
